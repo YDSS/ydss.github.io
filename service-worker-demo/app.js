@@ -1,19 +1,17 @@
 if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('/service-worker-demo/service-worker.js', {
-        scope: '/test/'
-    }).then(function (registration) {
+        scope: '/service-worker-demo/'
+    }).then(function (reg) {
         var serviceWorker;
 
-        if (registration.installing) {
-            serviceWorker = registration.installing;
-            document.querySelector('#kind').textContent = 'installing';
-        } else if (registration.waiting) {
-            serviceWorker = registration.waiting;
-            document.querySelector('#kind').textContent = 'waiting';
-        } else if (registration.active) {
-            serviceWorker = registration.active;
-            document.querySelector('#kind').textContent = 'active';
+        if(reg.installing) {
+            console.log('Service worker installing');
+        } else if(reg.waiting) {
+            console.log('Service worker installed');
+        } else if(reg.active) {
+            console.log('Service worker active');
         }
+
         if (serviceWorker) {
             serviceWorker.addEventListener('statechange', function (e) {
 
@@ -25,7 +23,7 @@ if ('serviceWorker' in navigator) {
 }
 
 window.onload = () => {
-    fetch('/test/test.css')
+    fetch('/service-worker-demo/test.css')
     .then(response => {
         return response.text();
     })
