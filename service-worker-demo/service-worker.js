@@ -1,12 +1,23 @@
 self.addEventListener('install', ev => {
-    console.log('service worker installing...');
 });
 
 self.addEventListener('activate', ev => {
-    console.log('service worker will activate...');
 });
 
 self.addEventListener('fetch', ev => {
-    console.log('service worker fetched something...');
-    ev.respondWith(new Response('hijack success !'));
+    var reqUrl = ev.request.url;
+    console.log('hijack request: ' + reqUrl);
+    
+    // 若是text.css的请求被拦截，返回伪造信息
+    if (reqUrl.indexOf('text.css') > -1) {
+        ev.respondWith(
+            new Response('hahah', {
+                headers: {'Content-Type': 'text/css'}
+            })
+        );
+    }
+    // 继续请求
+    else {
+        ev.respondWith(fetch(ev.request));
+    }
 });

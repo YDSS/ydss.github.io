@@ -28,7 +28,7 @@ window.onload = () => {
         return response.text();
     })
     .then(text => {
-        console.log(text);
+        console.log('text.css: ' + text);
         return text;
     });
 }
