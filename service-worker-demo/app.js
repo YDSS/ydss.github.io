@@ -23,12 +23,19 @@ if ('serviceWorker' in navigator) {
 }
 
 window.onload = () => {
-    fetch('/service-worker-demo/test.css')
-    .then(response => {
-        return response.text();
-    })
-    .then(text => {
-        console.log('text.css: ' + text);
-        return text;
-    });
+    // fetch('/service-worker-demo/test.css')
+    //     .then(response => {
+    //         return response.text();
+    //     })
+    //     .then(text => {
+    //         console.log('text.css: ' + text);
+    //         return text;
+    //     });
+    fetch('/root.css')
+        .then(response => {
+            return response.text();
+        })
+        .then(text => {
+            console.log('root.css: ' + text);
+        });
 }
