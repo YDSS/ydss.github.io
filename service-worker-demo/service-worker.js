@@ -11,7 +11,6 @@ self.addEventListener('fetch', ev => {
     
     // 若是text.css的请求被拦截，返回伪造信息
     // if (reqUrl.indexOf('test.css') > -1) {
-    // 若能拦截到/root.css，说明scope无效
     if (reqUrl.indexOf('root.css') > -1) {
         console.log('hijack root.css');
         ev.respondWith(
@@ -24,4 +23,18 @@ self.addEventListener('fetch', ev => {
     else {
         ev.respondWith(fetch(ev.request));
     }
+    // 验证scope是否有效，
+    // 若能拦截到root.css，即在/service-worker-demo/的上层，在说明scope无效
+    // if (reqUrl.indexOf('root.css') > -1) {
+    //     console.log('hijack root.css');
+    //     ev.respondWith(
+    //         new Response('scope not working!', {
+    //             headers: {'Content-Type': 'text/css'}
+    //         })
+    //     );
+    // }
+    // // 继续请求
+    // else {
+    //     ev.respondWith(fetch(ev.request));
+    // }
 });
