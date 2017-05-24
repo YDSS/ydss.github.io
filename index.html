@@ -2,15 +2,15 @@
 bg: "rails.jpg"
 layout: default
 crawlertitle: "Jekyll blog"
-title: "Voyager"
-summary: "main page"
+title: "Blog"
+summary: ""
 ---
 
 {% for post in site.posts %}
-    <!-- {% if post.categories == 'blog'%} -->
+    {% if post.type == 'blog'%}
         <article class="index-page">
         <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
             {{ post.excerpt }}
         </article>
-  <!-- {% endif %} -->
+  {% endif %}
 {% endfor %}

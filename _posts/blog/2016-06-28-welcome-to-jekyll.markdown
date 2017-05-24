@@ -5,6 +5,7 @@ crawlertitle: "How to use jekyll"
 summary: "Jekyll default page"
 date:   2016-06-28 23:09:47 +0700
 categories: blog
+type: blog
 tags: 'jekyll'
 author: redVi
 ---
