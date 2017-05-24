@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Your awesome title</title>
+    <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+</description>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Wed, 24 May 2017 20:31:27 +0800</pubDate>
+    <lastBuildDate>Wed, 24 May 2017 20:31:27 +0800</lastBuildDate>
+    <generator>Jekyll v3.4.3</generator>
+    
+      <item>
+        <title>test</title>
+        <description>&lt;h1 id=&quot;test&quot;&gt;test&lt;/h1&gt;
+
+&lt;p&gt;hahaha&lt;/p&gt;
+</description>
+        <pubDate>Thu, 29 Jun 2017 21:09:47 +0800</pubDate>
+        <link>http://localhost:4000/posts/test1/</link>
+        <guid isPermaLink="true">http://localhost:4000/posts/test1/</guid>
+        
+        <category>front-end</category>
+        
+        
+        <category>posts</category>
+        
+      </item>
+    
+      <item>
+        <title>test</title>
+        <description>&lt;h1 id=&quot;test&quot;&gt;test&lt;/h1&gt;
+
+&lt;p&gt;hahaha&lt;/p&gt;
+</description>
+        <pubDate>Thu, 29 Jun 2017 21:09:47 +0800</pubDate>
+        <link>http://localhost:4000/posts/test0/</link>
+        <guid isPermaLink="true">http://localhost:4000/posts/test0/</guid>
+        
+        <category>front-end</category>
+        
+        
+        <category>posts</category>
+        
+      </item>
+    
+      <item>
+        <title>test</title>
+        <description>&lt;h1 id=&quot;test&quot;&gt;test&lt;/h1&gt;
+
+&lt;p&gt;hahaha&lt;/p&gt;
+</description>
+        <pubDate>Thu, 29 Jun 2017 21:09:47 +0800</pubDate>
+        <link>http://localhost:4000/posts/test/</link>
+        <guid isPermaLink="true">http://localhost:4000/posts/test/</guid>
+        
+        <category>front-end</category>
+        
+        
+        <category>posts</category>
+        
+      </item>
+    
+      <item>
+        <title>test</title>
+        <description>&lt;h1 id=&quot;test&quot;&gt;test&lt;/h1&gt;
+
+&lt;p&gt;hahaha&lt;/p&gt;
+</description>
+        <pubDate>Thu, 29 Jun 2017 21:09:47 +0800</pubDate>
+        <link>http://localhost:4000/diary/test9/</link>
+        <guid isPermaLink="true">http://localhost:4000/diary/test9/</guid>
+        
+        <category>front-end</category>
+        
+        
+        <category>diary</category>
+        
+      </item>
+    
+      <item>
+        <title>test</title>
+        <description>&lt;h1 id=&quot;test&quot;&gt;test&lt;/h1&gt;
+
+&lt;p&gt;hahaha&lt;/p&gt;
+</description>
+        <pubDate>Thu, 29 Jun 2017 21:09:47 +0800</pubDate>
+        <link>http://localhost:4000/diary/test4/</link>
+        <guid isPermaLink="true">http://localhost:4000/diary/test4/</guid>
+        
+        <category>front-end</category>
+        
+        
+        <category>diary</category>
+        
+      </item>
+    
+  </channel>
+</rss>
